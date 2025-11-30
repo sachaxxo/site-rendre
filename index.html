@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PosterVerse - Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-image"></i></span>
+        <span class="logo-text">Poster<span>Verse</span></span>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li class="nav__item"><a href="index.html">Accueil</a></li>
+            <li class="nav__item"><a href="posters.html">Posters</a></li>
+            <li class="nav__item"><a href="artistes.html">Artistes</a></li>
+            <li class="nav__item"><a href="a-propos.html">À propos</a></li>
+            <li class="nav__item"><a href="faq.html">FAQ</a></li>
+            <li class="nav__item nav__item--cta"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">Posters design & illustrés</p>
+            <h1 class="hero-title">
+                Donne du style à tes murs
+                <span class="hero-title-highlight">avec PosterVerse</span>
+            </h1>
+            <p class="hero-text">
+                Une collection de posters minimalistes, vintage ou colorés pour ton salon, ta chambre ou ton bureau.
+                Imprimés en France, papier premium, formats variés.
+            </p>
+            <div class="hero-buttons">
+                <a href="posters.html" class="btn btn-primary">Voir la collection</a>
+                <a href="#best-sellers" class="btn btn-ghost">Nos best-sellers</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="poster-stack">
+                <div class="poster-card poster-card--accent">
+                    <span class="poster-label">Nouveau</span>
+                    <img src="https://picsum.photos/400/550?random=1" alt="Poster abstrait coloré">
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/400/550?random=2" alt="Poster ville de nuit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arguments -->
+    <section class="features" aria-label="Pourquoi choisir PosterVerse ?">
+        <h2 class="section-title">Pourquoi tu vas adorer nos posters</h2>
+        <div class="features-grid">
+            <article class="feature-card">
+                <i class="fa-solid fa-print feature-icon"></i>
+                <h3>Qualité premium</h3>
+                <p>Papier épais, finitions mattes, couleurs éclatantes. Tes posters durent dans le temps.</p>
+            </article>
+            <article class="feature-card">
+                <i class="fa-solid fa-truck-fast feature-icon"></i>
+                <h3>Livraison rapide</h3>
+                <p>Expédition sous 48h dans toute la France métropolitaine.</p>
+            </article>
+            <article class="feature-card">
+                <i class="fa-solid fa-palette feature-icon"></i>
+                <h3>Artistes indépendants</h3>
+                <p>Chaque poster soutient un illustrateur ou une illustratrice de la scène indépendante.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Best-sellers (Grid) -->
+    <section id="best-sellers" class="poster-section" aria-label="Posters best-sellers">
+        <h2 class="section-title">Best-sellers du moment</h2>
+        <div class="poster-grid">
+            <article class="poster-item">
+                <div class="poster-image-wrapper">
+                    <img src="https://picsum.photos/450/600?random=3" alt="Poster paysage montagne minimaliste">
+                </div>
+                <div class="poster-info">
+                    <h3>Sunset Peaks</h3>
+                    <p class="poster-artist">par <span>Nova Studio</span></p>
+                    <p class="poster-price">24,90 €</p>
+                </div>
+            </article>
+
+            <article class="poster-item">
+                <div class="poster-image-wrapper">
+                    <img src="https://picsum.photos/450/600?random=4" alt="Poster affiche vintage de ville">
+                </div>
+                <div class="poster-info">
+                    <h3>Retro Paris</h3>
+                    <p class="poster-artist">par <span>Atelier LX</span></p>
+                    <p class="poster-price">29,90 €</p>
+                </div>
+            </article>
+
+            <article class="poster-item">
+                <div class="poster-image-wrapper">
+                    <img src="https://picsum.photos/450/600?random=5" alt="Poster abstrait formes géométriques">
+                </div>
+                <div class="poster-info">
+                    <h3>Shapes & Lines</h3>
+                    <p class="poster-artist">par <span>Linea</span></p>
+                    <p class="poster-price">19,90 €</p>
+                </div>
+            </article>
+
+            <article class="poster-item">
+                <div class="poster-image-wrapper">
+                    <img src="https://picsum.photos/450/600?random=6" alt="Poster cosmos et planète">
+                </div>
+                <div class="poster-info">
+                    <h3>Cosmic Dreams</h3>
+                    <p class="poster-artist">par <span>Orion Studio</span></p>
+                    <p class="poster-price">27,90 €</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 PosterVerse. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="a-propos.html">À propos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram PosterVerse"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest PosterVerse"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" aria-label="Twitter PosterVerse"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
