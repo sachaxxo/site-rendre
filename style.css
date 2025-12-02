@@ -293,12 +293,19 @@ section {
     transform: rotate(-4deg) translateY(16px);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
+.poster-card {
+    z-index: 1;
+}
 
 .poster-card--accent {
     inset: -14px 16px 24px -16px;
     background: radial-gradient(circle at top, var(--accent), #111827 55%);
     transform: rotate(6deg) translateY(-8px);
 }
+.poster-card--accent {
+    z-index: 2;
+}
+
 
 /* ::before utilisé ici aussi */
 .poster-card--accent::before {
@@ -309,6 +316,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.15);
     opacity: 0.85;
 }
+
 
 .poster-card img {
     width: 100%;

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +22,7 @@
     </div>
     <nav class="main-nav">
         <ul>
-            <li class="nav__item"><a href="index.html">Accueil</a></li>
+            <li class="nav__item"><a href="index.html" class="is-active">Accueil</a></li>
             <li class="nav__item"><a href="posters.html">Posters</a></li>
             <li class="nav__item"><a href="artistes.html">Artistes</a></li>
             <li class="nav__item"><a href="a-propos.html">À propos</a></li>
@@ -56,10 +55,12 @@
             <div class="poster-stack">
                 <div class="poster-card poster-card--accent">
                     <span class="poster-label">Nouveau</span>
-                    <img src="https://picsum.photos/400/550?random=1" alt="Poster abstrait coloré">
+                    <!-- Poster koï -->
+                    <img src="images/koi.webp" alt="Poster poisson koï japonais">
                 </div>
                 <div class="poster-card">
-                    <img src="https://picsum.photos/400/550?random=2" alt="Poster ville de nuit">
+                    <!-- Poster piscine -->
+                    <img src="images/piscine.webp" alt="Poster piscine surréaliste Burning Pool">
                 </div>
             </div>
         </div>
@@ -87,53 +88,56 @@
         </div>
     </section>
 
-    <!-- Best-sellers (Grid) -->
+    <!-- Best-sellers (avec tes vrais posters) -->
     <section id="best-sellers" class="poster-section" aria-label="Posters best-sellers">
         <h2 class="section-title">Best-sellers du moment</h2>
         <div class="poster-grid">
-            <article class="poster-item">
-                <div class="poster-image-wrapper">
-                    <img src="https://picsum.photos/450/600?random=3" alt="Poster paysage montagne minimaliste">
-                </div>
-                <div class="poster-info">
-                    <h3>Sunset Peaks</h3>
-                    <p class="poster-artist">par <span>Nova Studio</span></p>
-                    <p class="poster-price">24,90 €</p>
-                </div>
-            </article>
 
             <article class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="https://picsum.photos/450/600?random=4" alt="Poster affiche vintage de ville">
+                    <img src="images/koi.webp" alt="Poster poisson koï japonais">
                 </div>
                 <div class="poster-info">
-                    <h3>Retro Paris</h3>
-                    <p class="poster-artist">par <span>Atelier LX</span></p>
+                    <h3>Kōhaku</h3>
+                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
                     <p class="poster-price">29,90 €</p>
                 </div>
             </article>
 
             <article class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="https://picsum.photos/450/600?random=5" alt="Poster abstrait formes géométriques">
+                    <!-- adapte .webp / .jpg selon ton vrai fichier -->
+                    <img src="images/montagne.webp" alt="Poster montagne rouge sur fond bleu">
                 </div>
                 <div class="poster-info">
-                    <h3>Shapes & Lines</h3>
-                    <p class="poster-artist">par <span>Linea</span></p>
-                    <p class="poster-price">19,90 €</p>
+                    <h3>Red Horizon</h3>
+                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-price">27,90 €</p>
                 </div>
             </article>
 
             <article class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="https://picsum.photos/450/600?random=6" alt="Poster cosmos et planète">
+                    <img src="images/riviere.webp" alt="Poster rivière illustration verte">
                 </div>
                 <div class="poster-info">
-                    <h3>Cosmic Dreams</h3>
-                    <p class="poster-artist">par <span>Orion Studio</span></p>
-                    <p class="poster-price">27,90 €</p>
+                    <h3>Silent River</h3>
+                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
+                    <p class="poster-price">26,90 €</p>
                 </div>
             </article>
+
+            <article class="poster-item">
+                <div class="poster-image-wrapper">
+                    <img src="images/nine-lives.webp" alt="Poster chat Nine Lives">
+                </div>
+                <div class="poster-info">
+                    <h3>Nine Lives</h3>
+                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-price">22,90 €</p>
+                </div>
+            </article>
+
         </div>
     </section>
 </main>
@@ -155,3 +159,4 @@
 </footer>
 </body>
 </html>
+
