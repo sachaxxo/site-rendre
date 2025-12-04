@@ -97,6 +97,12 @@ section {
     transform: translateY(0);
     transition: transform var(--transition-fast);
 }
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: block;
+}
 
 /* :hover pseudo-classe */
 .logo-icon:hover {
@@ -812,4 +818,60 @@ textarea {
     .artists-intro {
         grid-template-columns: 1fr;
     }
+}
+.about-layout article h2 {
+    color: var(--accent-soft);
+}
+
+.about-layout ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-layout li {
+    margin-bottom: 0.4rem;
+}
+/* ===== FAQ STYLED ===== */
+
+.faq-list {
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    font-weight: 500;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    padding: 0 1.25rem 1.1rem;
+    color: var(--muted);
+}
+
+.faq-item i {
+    transition: transform var(--transition-fast);
+}
+
+.faq-item[open] i {
+    transform: rotate(180deg);
 }

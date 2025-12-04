@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PosterVerse — Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-text">Poster<span>Verse</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav__item"><a href="index.html">Accueil</a></li>
+                <li class="nav__item"><a href="posters.html">Posters</a></li>
+                <li class="nav__item"><a href="artistes.html">Artistes</a></li>
+                <li class="nav__item"><a href="a-propos.html">À propos</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
+                <li class="nav__item nav__item--cta"><a href="contact.html" class="is-active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page">
+
+    <section class="page-header">
+        <h1>Contact</h1>
+        <p>Une question, un projet, une collaboration ? Écrivez-nous.</p>
+    </section>
+
+    <section class="contact-layout">
+
+        <!-- Colonne gauche : infos -->
+        <div class="contact-info">
+            <h2>Entrer en contact</h2>
+            <p>
+                Pour toute question concernant les posters, les artistes ou une commande,
+                vous pouvez nous écrire directement via ce formulaire ou par email.
+            </p>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <strong>Email :</strong>
+                        <a href="mailto:sacha.isman@gmail.com">sacha.isman@gmail.com</a>
+                    </span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span><strong>Réponse :</strong> sous 24 à 48 heures (jours ouvrés)</span>
+                </li>
+            </ul>
+
+            <p class="contact-note">
+                Merci de préciser le maximum d’informations possibles dans votre message :
+                référence du poster, numéro de commande, type de demande…
+                Cela nous permet de vous répondre plus rapidement et plus précisément.
+            </p>
+        </div>
+
+        <!-- Colonne droite : formulaire -->
+        <div class="contact-form">
+            <form action="mailto:sacha.isman@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <label for="name">Nom et prénom</label>
+                    <input type="text" id="name" name="Nom" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="Email" placeholder="vous@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="topic">Objet de la demande</label>
+                    <select id="topic" name="Objet">
+                        <option value="question_generale">Question générale</option>
+                        <option value="commande">Suivi de commande</option>
+                        <option value="collaboration">Collaboration / artiste</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" rows="5" placeholder="Expliquez-nous votre demande…" required></textarea>
+                </div>
+
+                <p class="form-disclaimer">
+                    Les informations renseignées sont utilisées uniquement pour répondre à votre demande de contact.
+                </p>
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane" style="margin-right: 0.4rem;"></i>
+                    Envoyer le message
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 PosterVerse — Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>

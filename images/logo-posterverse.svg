@@ -1,0 +1,41 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond rond dégradé -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff5f6c"></stop>
+      <stop offset="50%" stop-color="#ff9c6c"></stop>
+      <stop offset="100%" stop-color="#ffedb6"></stop>
+    </linearGradient>
+    <linearGradient id="posterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"></stop>
+      <stop offset="100%" stop-color="#040711"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Cercle principal -->
+  <circle cx="60" cy="60" r="56" fill="url(#bgGrad)"></circle>
+
+  <!-- Ombre du poster -->
+  <rect x="34" y="32" rx="6" ry="6" width="48" height="62" fill="rgba(0,0,0,0.25)" transform="rotate(5 58 63)"></rect>
+
+  <!-- Poster -->
+  <rect x="30" y="28" rx="6" ry="6" width="48" height="62" fill="url(#posterGrad)" stroke="white" stroke-width="2"></rect>
+
+  <!-- Bande colorée en haut -->
+  <rect x="32" y="30" width="44" height="9" fill="#ff5f6c"></rect>
+
+  <!-- Petit soleil / rond accent -->
+  <circle cx="40" cy="48" r="6" fill="#ffb3c0"></circle>
+
+  <!-- Ligne d’horizon -->
+  <path d="M34 58 Q 45 52 56 56 T 78 58" stroke="#ffedb6" stroke-width="2" fill="none"></path>
+
+  <!-- Lignes en bas (texte abstrait) -->
+  <rect x="34" y="70" width="28" height="3" fill="#a3a7c0" rx="1.5"></rect>
+  <rect x="34" y="76" width="20" height="3" fill="#a3a7c0" rx="1.5"></rect>
+
+  <!-- Initiales PV -->
+  <text x="60" y="103" text-anchor="middle" font-family="Poppins, system-ui" font-size="14" font-weight="700" fill="#040711" letter-spacing="3">
+    PV
+  </text>
+</svg>
