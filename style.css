@@ -57,7 +57,7 @@ section {
     padding: 2rem 1.5rem 1rem;
 }
 
-/* Header + Nav */
+/* =================== Header + Nav =================== */
 
 .site-header {
     position: sticky;
@@ -66,17 +66,14 @@ section {
     backdrop-filter: blur(20px);
     background: linear-gradient(to bottom, rgba(4, 7, 17, 0.95), rgba(4, 7, 17, 0.8));
     border-bottom: 1px solid var(--border-soft);
-    padding: 0.75rem 1.5rem;
-    display: flex;
-    justify-content: center;
 }
 
-.site-header > * {
+.header-inner {
     max-width: var(--max-width);
-    width: 100%;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 /* Logo */
@@ -85,6 +82,7 @@ section {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    margin-right: auto; /* pousse le menu vers la droite */
 }
 
 .logo-icon {
@@ -102,7 +100,7 @@ section {
 
 /* :hover pseudo-classe */
 .logo-icon:hover {
-    transform: translateY(-2px) scale(1.05); /* transform + transition */
+    transform: translateY(-2px) scale(1.05);
 }
 
 .logo-icon i {
@@ -121,6 +119,10 @@ section {
 }
 
 /* Nav */
+
+.main-nav {
+    margin-left: 2rem;
+}
 
 .main-nav ul {
     display: flex;
@@ -156,7 +158,6 @@ section {
 
 /* :nth-child() */
 .main-nav .nav__item:nth-child(2) a {
-    /* léger accent sur l'onglet Posters, juste pour montrer la pseudo-classe */
     letter-spacing: 0.03em;
 }
 
@@ -196,7 +197,7 @@ section {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    opacity: 0.95; /* propriété opacity */
+    opacity: 0.95;
 }
 
 .btn-ghost {
@@ -209,14 +210,14 @@ section {
     background: rgba(255, 255, 255, 0.06);
 }
 
-/* Hero */
+/* =================== Hero =================== */
 
 .hero {
     max-width: var(--max-width);
     margin: 2rem auto 0;
     padding: 3.5rem 1.5rem 3rem;
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr); /* CSS Grid */
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
     gap: 3rem;
     align-items: center;
 }
@@ -288,12 +289,10 @@ section {
     inset: 0;
     background: var(--card);
     border-radius: var(--radius-xl);
-    overflow: hidden; /* overflow */
+    overflow: hidden;
     box-shadow: var(--shadow-soft);
     transform: rotate(-4deg) translateY(16px);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-.poster-card {
     z-index: 1;
 }
 
@@ -301,13 +300,9 @@ section {
     inset: -14px 16px 24px -16px;
     background: radial-gradient(circle at top, var(--accent), #111827 55%);
     transform: rotate(6deg) translateY(-8px);
-}
-.poster-card--accent {
     z-index: 2;
 }
 
-
-/* ::before utilisé ici aussi */
 .poster-card--accent::before {
     content: "";
     position: absolute;
@@ -317,12 +312,11 @@ section {
     opacity: 0.85;
 }
 
-
 .poster-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(8%) contrast(1.03); /* filter */
+    filter: grayscale(8%) contrast(1.03);
     transition: transform var(--transition-fast), filter var(--transition-fast);
 }
 
@@ -345,7 +339,7 @@ section {
     letter-spacing: 0.16em;
 }
 
-/* Features section */
+/* =================== Features section =================== */
 
 .section-title {
     max-width: var(--max-width);
@@ -360,7 +354,7 @@ section {
 }
 
 .features-grid {
-    display: flex; /* Flexbox */
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0 1.5rem 1rem;
@@ -385,7 +379,7 @@ section {
     color: var(--accent-soft);
 }
 
-/* Poster grid (best-sellers + galerie) */
+/* =================== Poster grid =================== */
 
 .poster-section {
     max-width: var(--max-width);
@@ -451,24 +445,15 @@ section {
     font-size: 0.95rem;
 }
 
-/* Pages "texte" */
+/* =================== Pages texte génériques =================== */
 
 .about-layout,
-.artists-grid,
 .faq-list {
     max-width: var(--max-width);
     margin: 0 auto 2rem;
     padding: 0 1.5rem 2rem;
     display: grid;
     gap: 1rem;
-}
-
-/* pseudo-classes sur les blocs texte */
-.faq-item:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.02);
-}
-.faq-item:nth-child(even) {
-    background: rgba(255, 255, 255, 0.04);
 }
 
 .artist-card,
@@ -480,7 +465,15 @@ section {
     border: 1px solid var(--border-soft);
 }
 
-/* Contact */
+/* pseudo-classes FAQ */
+.faq-item:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+}
+.faq-item:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* =================== Contact =================== */
 
 .contact-layout {
     max-width: var(--max-width);
@@ -547,7 +540,6 @@ textarea {
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-/* :focus pour la forme */
 input:focus,
 select:focus,
 textarea:focus {
@@ -565,7 +557,7 @@ textarea {
     margin-bottom: 0.9rem;
 }
 
-/* Footer */
+/* =================== Footer =================== */
 
 .site-footer {
     border-top: 1px solid var(--border-soft);
@@ -609,7 +601,7 @@ textarea {
     color: var(--accent-soft);
 }
 
-/* Responsive (desktop -> tablette / mobile) */
+/* =================== Responsive =================== */
 
 @media (max-width: 900px) {
     .hero {
@@ -632,11 +624,7 @@ textarea {
 }
 
 @media (max-width: 700px) {
-    .site-header {
-        padding: 0.7rem 1rem;
-    }
-
-    .site-header > * {
+    .header-inner {
         flex-direction: column;
         gap: 0.6rem;
     }
@@ -653,5 +641,175 @@ textarea {
     .poster-grid,
     .poster-grid--gallery {
         grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* =================== Section artistes =================== */
+
+.artists-intro {
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.artists-intro__block h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.artists-intro__block p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.artists-grid {
+    max-width: var(--max-width);
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.artist-card {
+    background: var(--card);
+    border-radius: var(--radius-xl);
+    padding: 2rem 2.2rem;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.artist-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.artist-avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.artist-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.artist-meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.artist-meta i {
+    margin-right: 0.4rem;
+}
+
+.artist-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.artist-tags li {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--muted);
+}
+
+.artist-bio {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* bloc posters artistes */
+
+.artist-posters h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.artist-posters ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.6rem;
+    color: var(--muted);
+}
+
+.artist-posters li {
+    margin-bottom: 0.25rem;
+}
+
+.artist-posters strong {
+    color: var(--text);
+}
+
+/* bouton / accordéon "Voir les posters de..." */
+
+.artist-details {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.3rem 0.9rem;
+    display: inline-block;
+}
+
+.artist-details[open] {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.artist-link {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.artist-link::-webkit-details-marker {
+    display: none;
+}
+
+.artist-details i {
+    font-size: 0.8rem;
+}
+
+.artist-posters-content {
+    margin-top: 0.7rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Responsive artistes */
+@media (max-width: 768px) {
+    .artists-intro {
+        grid-template-columns: 1fr;
     }
 }

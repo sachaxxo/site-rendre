@@ -16,53 +16,239 @@
 </head>
 <body>
 <header class="site-header">
-    <div class="logo">
-        <span class="logo-icon"><i class="fa-solid fa-image"></i></span>
-        <span class="logo-text">Poster<span>Verse</span></span>
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-image"></i></span>
+            <span class="logo-text">Poster<span>Verse</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav__item"><a href="index.html">Accueil</a></li>
+                <li class="nav__item"><a href="posters.html">Posters</a></li>
+                <li class="nav__item"><a href="artistes.html" class="is-active">Artistes</a></li>
+                <li class="nav__item"><a href="a-propos.html">À propos</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
+                <li class="nav__item nav__item--cta"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="main-nav">
-        <ul>
-            <li class="nav__item"><a href="index.html">Accueil</a></li>
-            <li class="nav__item"><a href="posters.html">Posters</a></li>
-            <li class="nav__item"><a href="artistes.html" class="is-active">Artistes</a></li>
-            <li class="nav__item"><a href="a-propos.html">À propos</a></li>
-            <li class="nav__item"><a href="faq.html">FAQ</a></li>
-            <li class="nav__item nav__item--cta"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </header>
 
 <main class="page">
     <section class="page-header">
         <h1>Les artistes de PosterVerse</h1>
-        <p>Une sélection d’illustrateurs et illustratrices qui donnent vie à nos affiches.</p>
+        <p>Une sélection d’illustrateurs et d’illustratrices qui donnent vie à nos affiches. Chaque poster soutient un artiste indépendant.</p>
+    </section>
+
+    <section class="artists-intro">
+        <div class="artists-intro__block">
+            <h2>Des univers graphiques variés</h2>
+            <p>
+                De l’illustration japonaise aux affiches pop inspirées de la musique et du cinéma, PosterVerse réunit des profils très différents
+                mais tous passionnés par l’image imprimée.
+            </p>
+        </div>
+        <div class="artists-intro__block">
+            <h2>Comment ça fonctionne&nbsp;?</h2>
+            <p>
+                Les artistes conservent leur style, nous nous occupons de l’impression, du papier et de l’expédition.
+                À chaque commande, une partie du montant leur est reversée.
+            </p>
+        </div>
     </section>
 
     <section class="artists-grid">
+
+        <!-- Julia -->
         <article class="artist-card">
-            <h2>Julia Kempenaers</h2>
-            <p>Illustratrice belge, Julia travaille sur des univers aquatiques et oniriques. On lui doit notamment les posters <strong>Kōhaku</strong>, <strong>Blue Motion</strong> et <strong>Burning Pool</strong>.</p>
+            <div class="artist-header">
+                <img src="images/julia.png" alt="Julia Kempenaers" class="artist-photo">
+                <div>
+                    <h2>Julia Kempenaers</h2>
+                    <p class="artist-meta">
+                        <i class="fa-solid fa-location-dot"></i> Bruxelles, Belgique ·
+                        <span>Illustration onirique & aquatique</span>
+                    </p>
+                    <ul class="artist-tags">
+                        <li>Couleurs vives</li>
+                        <li>Univers aquatiques</li>
+                        <li>Textures grainées</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Illustratrice belge et passionnée de Châteauroux, Julia travaille sur des univers aquatiques et oniriques, souvent inspirés par les piscines,
+                les reflets et les poissons koï. Elle aime jouer avec les contrastes entre aplats très graphiques et détails subtils.
+            </p>
+            <div class="artist-posters">
+                <details class="artist-details">
+                    <summary class="artist-link">
+                        Voir les posters de Julia
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div class="artist-posters-content">
+                        <h3>Posters disponibles</h3>
+                        <ul>
+                            <li><strong>Kōhaku</strong> — poisson koï sur fond carrelé bleu</li>
+                            <li><strong>Blue Motion</strong> — abstraction ondulée bleue</li>
+                            <li><strong>Burning Pool</strong> — piscine surréaliste enflammée</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </article>
 
+        <!-- Liaju -->
         <article class="artist-card">
-            <h2>Liaju Kempernaesse</h2>
-            <p>Artiste franco-japonaise, Liaju mélange paysages naturels et graphisme rétro. Elle signe les affiches <strong>Silent River</strong> et <strong>Okinawa Dreams</strong>.</p>
+            <div class="artist-header">
+                <img src="images/liaju.png" alt="Liaju Kempernaesse" class="artist-photo">
+                <div>
+                    <h2>Liaju Kempernaesse</h2>
+                    <p class="artist-meta">
+                        <i class="fa-solid fa-location-dot"></i> Paris & Tokyo ·
+                        <span>Paysages stylisés & influences rétro</span>
+                    </p>
+                    <ul class="artist-tags">
+                        <li>Paysages</li>
+                        <li>Ambiances zen</li>
+                        <li>Japon moderne</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Artiste franco-japonaise, Liaju mélange paysages naturels et graphisme rétro. Elle affectionne les compositions verticales
+                et les couleurs légèrement désaturées qui rappellent les affiches de voyage des années 70.
+            </p>
+            <div class="artist-posters">
+                <details class="artist-details">
+                    <summary class="artist-link">
+                        Voir les posters de Liaju
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div class="artist-posters-content">
+                        <h3>Posters disponibles</h3>
+                        <ul>
+                            <li><strong>Silent River</strong> — canyon verdoyant et barques minimalistes</li>
+                            <li><strong>Okinawa Dreams</strong> — arbre sculptural et ciel turquoise</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </article>
 
+        <!-- Kenji -->
         <article class="artist-card">
-            <h2>Kenji Morita</h2>
-            <p>Designer installé à Tokyo, Kenji explore les contrastes de couleurs fortes et les formes épurées. Il est l’auteur de <strong>Red Horizon</strong> et <strong>Drift Drive</strong>.</p>
+            <div class="artist-header">
+                <img src="images/kenji.png" alt="Kenji Morita" class="artist-photo">
+                <div>
+                    <h2>Kenji Morita</h2>
+                    <p class="artist-meta">
+                        <i class="fa-solid fa-location-dot"></i> Tokyo, Japon ·
+                        <span>Affiches graphiques & contrastes forts</span>
+                    </p>
+                    <ul class="artist-tags">
+                        <li>Contrastes forts</li>
+                        <li>Minimalisme</li>
+                        <li>Paysages abstraits</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Designer installé à Tokyo, Kenji explore les couleurs très saturées et les compositions presque abstraites.
+                Ses affiches jouent avec la frontière entre paysage et forme pure, en laissant une grande place au bleu et au rouge.
+            </p>
+            <div class="artist-posters">
+                <details class="artist-details">
+                    <summary class="artist-link">
+                        Voir les posters de Kenji
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div class="artist-posters-content">
+                        <h3>Posters disponibles</h3>
+                        <ul>
+                            <li><strong>Red Horizon</strong> — montagne sombre surmontée d’un nuage rouge vif</li>
+                            <li><strong>Drift Drive</strong> — route côtière et voiture rouge sous un ciel bleu électrique</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </article>
 
+        <!-- Aya -->
         <article class="artist-card">
-            <h2>Aya Takahashi</h2>
-            <p>Graphiste et affichiste, Aya puise dans la culture pop et la musique. Elle réalise les posters <strong>Nine Lives</strong> et <strong>Mega Hits 1993</strong>.</p>
+            <div class="artist-header">
+                <img src="images/aya.png" alt="Aya Takahashi" class="artist-photo">
+                <div>
+                    <h2>Aya Takahashi</h2>
+                    <p class="artist-meta">
+                        <i class="fa-solid fa-location-dot"></i> Osaka, Japon ·
+                        <span>Culture pop & musique</span>
+                    </p>
+                    <ul class="artist-tags">
+                        <li>Culture pop</li>
+                        <li>Typographie</li>
+                        <li>Références musicales</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Graphiste et affichiste, Aya puise dans les pochettes de disques, les clips et les magazines vintage.
+                Elle adore combiner typographies massives, personnages stylisés et références directes à la musique électronique.
+            </p>
+            <div class="artist-posters">
+                <details class="artist-details">
+                    <summary class="artist-link">
+                        Voir les posters d’Aya
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div class="artist-posters-content">
+                        <h3>Posters disponibles</h3>
+                        <ul>
+                            <li><strong>Nine Lives</strong> — chat noir stylisé et typographie rouge</li>
+                            <li><strong>Mega Hits 1993</strong> — hommage à l’esthétique Daft Punk</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </article>
 
+        <!-- Noémie -->
         <article class="artist-card">
-            <h2>Noémie Delaunay</h2>
-            <p>Illustratrice française à l’humour noir assumé, Noémie est derrière l’affiche <strong>Take a Break</strong>, qui rappelle (avec classe) de faire des pauses.</p>
+            <div class="artist-header">
+                <img src="images/noemie.png" alt="Noémie Delaunay" class="artist-photo">
+                <div>
+                    <h2>Noémie Delaunay</h2>
+                    <p class="artist-meta">
+                        <i class="fa-solid fa-location-dot"></i> Lyon, France ·
+                        <span>Humour noir & affiches engagées</span>
+                    </p>
+                    <ul class="artist-tags">
+                        <li>Humour noir</li>
+                        <li>Affiches engagées</li>
+                        <li>Personnages forts</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Illustratrice française, Noémie joue avec les symboles de la pop culture pour parler de surcharge mentale,
+                de travail et de société. Ses personnages sont souvent ironiques, mais toujours très expressifs.
+            </p>
+            <div class="artist-posters">
+                <details class="artist-details">
+                    <summary class="artist-link">
+                        Voir les posters de Noémie
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div class="artist-posters-content">
+                        <h3>Posters disponibles</h3>
+                        <ul>
+                            <li><strong>Take a Break</strong> — faucheuse en robe sombre, café à la main, rappelant de faire une pause</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </article>
+
     </section>
 </main>
 
