@@ -25,7 +25,7 @@
             <ul>
                 <li class="nav__item"><a href="index.html" class="is-active">Accueil</a></li>
                 <li class="nav__item"><a href="posters.html">Posters</a></li>
-                <li class="nav__item"><a href="artistes.html" >Artistes</a>
+                <li class="nav__item"><a href="artistes.html">Artistes</a></li>
                 <li class="nav__item"><a href="a-propos.html">À propos</a></li>
                 <li class="nav__item"><a href="faq.html">FAQ</a></li>
                 <li class="nav__item nav__item--cta"><a href="contact.html">Contact</a></li>
@@ -33,6 +33,7 @@
         </nav>
     </div>
 </header>
+
 <main>
     <!-- Hero -->
     <section class="hero">
@@ -54,14 +55,14 @@
 
         <div class="hero-visual">
             <div class="poster-stack">
-                <div class="poster-card poster-card--accent">
+                <!-- Hero : poster principal cliquable vers sa fiche -->
+                <a href="posters.html#poster-koi" class="poster-card poster-card--accent">
                     <span class="poster-label">Nouveau</span>
-                    <img src="images/koi.webp" alt="Poster poisson koï japonais">
-                </div>
-                <div class="poster-card">
-                    <!-- adapte .jpg ou .webp selon ton fichier réel -->
+                    <img src="images/koi.webp" alt="Poster poisson koï japonais Kōhaku">
+                </a>
+                <a href="posters.html#poster-piscine" class="poster-card">
                     <img src="images/piscine.jpg" alt="Poster piscine surréaliste Burning Pool">
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -93,40 +94,44 @@
         <h2 class="section-title">Best-sellers du moment</h2>
         <div class="poster-grid">
 
-            <article class="poster-item">
+            <!-- Koi -->
+            <a href="posters.html#poster-koi" class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="images/koi.webp" alt="Poster poisson koï japonais">
+                    <img src="images/koi.webp" alt="Poster poisson koï japonais Kōhaku">
                 </div>
                 <div class="poster-info">
                     <h3>Kōhaku</h3>
                     <p class="poster-artist">par <span>Julia Kempenaers</span></p>
                     <p class="poster-price">29,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- Montagne -->
+            <a href="posters.html#poster-montagne" class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="images/montagne.webp" alt="Poster montagne rouge sur fond bleu">
+                    <img src="images/montagne.webp" alt="Poster montagne rouge sur fond bleu Red Horizon">
                 </div>
                 <div class="poster-info">
                     <h3>Red Horizon</h3>
                     <p class="poster-artist">par <span>Kenji Morita</span></p>
                     <p class="poster-price">27,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- Rivière -->
+            <a href="posters.html#poster-riviere" class="poster-item">
                 <div class="poster-image-wrapper">
-                    <img src="images/riviere.webp" alt="Poster rivière illustration verte">
+                    <img src="images/riviere.webp" alt="Poster rivière illustration verte Silent River">
                 </div>
                 <div class="poster-info">
                     <h3>Silent River</h3>
                     <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
                     <p class="poster-price">26,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- Nine Lives -->
+            <a href="posters.html#poster-ninelives" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/nine-lives.webp" alt="Poster chat Nine Lives">
                 </div>
@@ -135,7 +140,7 @@
                     <p class="poster-artist">par <span>Aya Takahashi</span></p>
                     <p class="poster-price">22,90 €</p>
                 </div>
-            </article>
+            </a>
 
         </div>
     </section>

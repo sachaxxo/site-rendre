@@ -31,9 +31,11 @@
     </div>
 </header>
 
-
-
 <main class="page">
+
+    <!-- ancre pour revenir en haut quand on ferme une modale -->
+    <div id="posters-top"></div>
+
     <section class="page-header">
         <h1>Galerie de posters</h1>
         <p>Découvrez notre sélection d'affiches contemporaines et artistiques.</p>
@@ -44,7 +46,8 @@
 
         <div class="poster-grid poster-grid--gallery">
 
-            <article class="poster-item">
+            <!-- 1. Koi -->
+            <a href="#poster-koi" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/koi.webp" alt="Poster poisson koï japonais">
                 </div>
@@ -53,42 +56,46 @@
                     <p class="poster-artist">par <span>Julia Kempenaers</span></p>
                     <p class="poster-price">29,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 2. Montagne -->
+            <a href="#poster-montagne" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/montagne.webp" alt="Poster montagne rouge sur fond bleu">
                 </div>
                 <div class="poster-info">
                     <h3>Red Horizon</h3>
-                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-artist">par <span>Kenji Morita</span></p>
                     <p class="poster-price">27,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 3. Rivière -->
+            <a href="#poster-riviere" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/riviere.webp" alt="Poster rivière illustration verte">
                 </div>
                 <div class="poster-info">
                     <h3>Silent River</h3>
-                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
+                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
                     <p class="poster-price">26,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 4. Nine Lives -->
+            <a href="#poster-ninelives" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/nine-lives.webp" alt="Poster chat Nine Lives">
                 </div>
                 <div class="poster-info">
                     <h3>Nine Lives</h3>
-                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-artist">par <span>Aya Takahashi</span></p>
                     <p class="poster-price">22,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 5. Abstrait bleu -->
+            <a href="#poster-abstrait" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/abstrait-bleu.webp" alt="Poster abstrait ondulé bleu">
                 </div>
@@ -97,31 +104,34 @@
                     <p class="poster-artist">par <span>Julia Kempenaers</span></p>
                     <p class="poster-price">24,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 6. Voiture -->
+            <a href="#poster-voiture" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/voiture.webp" alt="Poster voiture rouge japonaise">
                 </div>
                 <div class="poster-info">
                     <h3>Drift Drive</h3>
-                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-artist">par <span>Kenji Morita</span></p>
                     <p class="poster-price">28,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 7. Squelette -->
+            <a href="#poster-squelette" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/squelette.webp" alt="Poster squelette café">
                 </div>
                 <div class="poster-info">
                     <h3>Take a Break</h3>
-                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
+                    <p class="poster-artist">par <span>Noémie Delaunay</span></p>
                     <p class="poster-price">25,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 8. Okinawa -->
+            <a href="#poster-okinawa" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/okinawa.webp" alt="Poster tourisme Okinawa">
                 </div>
@@ -130,32 +140,311 @@
                     <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
                     <p class="poster-price">30,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 9. Daft Punk -->
+            <a href="#poster-daftpunk" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/daftpunk.webp" alt="Poster Daft Punk Mega Hits">
                 </div>
                 <div class="poster-info">
                     <h3>Mega Hits 1993</h3>
-                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
+                    <p class="poster-artist">par <span>Aya Takahashi</span></p>
                     <p class="poster-price">32,90 €</p>
                 </div>
-            </article>
+            </a>
 
-            <article class="poster-item">
+            <!-- 10. Piscine -->
+            <a href="#poster-piscine" class="poster-item">
                 <div class="poster-image-wrapper">
                     <img src="images/piscine.jpg" alt="Poster piscine en feu surréaliste">
                 </div>
                 <div class="poster-info">
                     <h3>Burning Pool</h3>
-                    <p class="poster-artist">par <span>Liaju Kempernaesse</span></p>
+                    <p class="poster-artist">par <span>Julia Kempenaers</span></p>
                     <p class="poster-price">34,90 €</p>
                 </div>
-            </article>
+            </a>
 
         </div>
     </section>
+
+    <!-- ============ MODALES "FAUSSE PAGE D’ACHAT" ============ -->
+
+    <!-- Koi -->
+    <section id="poster-koi" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/koi.webp" alt="Poster Kōhaku">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Kōhaku</h2>
+                <p class="poster-modal__artist">par Julia Kempenaers</p>
+                <p class="poster-modal__price">29,90 €</p>
+                <p class="poster-modal__desc">
+                    Poster inspiré des bassins japonais de poissons koï, avec un traitement graphique très coloré
+                    et une grille bleu profond. Imprimé sur papier mat premium.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-koi">Format</label>
+                    <select id="format-koi" disabled>
+                        <option>A3 (29,7 × 42 cm)</option>
+                        <option>A2 (42 × 59,4 cm)</option>
+                        <option>50 × 70 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Montagne -->
+    <section id="poster-montagne" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/montagne.webp" alt="Poster Red Horizon">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Red Horizon</h2>
+                <p class="poster-modal__artist">par Kenji Morita</p>
+                <p class="poster-modal__price">27,90 €</p>
+                <p class="poster-modal__desc">
+                    Paysage minimaliste aux teintes bleues profondes, contrasté par un nuage rouge flamboyant.
+                    Idéal pour apporter une touche graphique forte à un salon ou un bureau.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-montagne">Format</label>
+                    <select id="format-montagne" disabled>
+                        <option>50 × 70 cm</option>
+                        <option>60 × 80 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rivière -->
+    <section id="poster-riviere" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/riviere.webp" alt="Poster Silent River">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Silent River</h2>
+                <p class="poster-modal__artist">par Liaju Kempernaesse</p>
+                <p class="poster-modal__price">26,90 €</p>
+                <p class="poster-modal__desc">
+                    Illustration verticale d’un canyon verdoyant et d’une rivière calme, parcourue par deux barques.
+                    Une affiche parfaite pour les amateurs de nature et de calme.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-riviere">Format</label>
+                    <select id="format-riviere" disabled>
+                        <option>A3 (29,7 × 42 cm)</option>
+                        <option>50 × 70 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nine Lives -->
+    <section id="poster-ninelives" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/nine-lives.webp" alt="Poster Nine Lives">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Nine Lives</h2>
+                <p class="poster-modal__artist">par Aya Takahashi</p>
+                <p class="poster-modal__price">22,90 €</p>
+                <p class="poster-modal__desc">
+                    Affiche typographique et graphique mettant en scène un chat noir stylisé
+                    accompagné d’un message percutant en rouge.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-ninelives">Format</label>
+                    <select id="format-ninelives" disabled>
+                        <option>A3 (29,7 × 42 cm)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstrait bleu -->
+    <section id="poster-abstrait" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/abstrait-bleu.webp" alt="Poster Blue Motion">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Blue Motion</h2>
+                <p class="poster-modal__artist">par Julia Kempenaers</p>
+                <p class="poster-modal__price">24,90 €</p>
+                <p class="poster-modal__desc">
+                    Composition abstraite en bleu profond, inspirée des mouvements de l’eau et des tracés calligraphiques.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-abstrait">Format</label>
+                    <select id="format-abstrait" disabled>
+                        <option>40 × 50 cm</option>
+                        <option>50 × 70 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voiture -->
+    <section id="poster-voiture" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/voiture.webp" alt="Poster Drift Drive">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Drift Drive</h2>
+                <p class="poster-modal__artist">par Kenji Morita</p>
+                <p class="poster-modal__price">28,90 €</p>
+                <p class="poster-modal__desc">
+                    Poster inspiré des routes côtières japonaises et des voitures de collection,
+                    dans un style pop et très coloré.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-voiture">Format</label>
+                    <select id="format-voiture" disabled>
+                        <option>50 × 70 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squelette -->
+    <section id="poster-squelette" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/squelette.webp" alt="Poster Take a Break">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Take a Break</h2>
+                <p class="poster-modal__artist">par Noémie Delaunay</p>
+                <p class="poster-modal__price">25,90 €</p>
+                <p class="poster-modal__desc">
+                    Une faucheuse assise avec un café à la main, sur fond rouge vif : un rappel ironique
+                    à faire une pause de temps en temps.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-squelette">Format</label>
+                    <select id="format-squelette" disabled>
+                        <option>A3 (29,7 × 42 cm)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Okinawa -->
+    <section id="poster-okinawa" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/okinawa.webp" alt="Poster Okinawa Dreams">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Okinawa Dreams</h2>
+                <p class="poster-modal__artist">par Liaju Kempernaesse</p>
+                <p class="poster-modal__price">30,90 €</p>
+                <p class="poster-modal__desc">
+                    Affiche inspirée des affiches touristiques vintage, avec un arbre stylisé sur fond turquoise lumineux.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-okinawa">Format</label>
+                    <select id="format-okinawa" disabled>
+                        <option>50 × 70 cm</option>
+                        <option>60 × 90 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daft Punk -->
+    <section id="poster-daftpunk" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/daftpunk.webp" alt="Poster Mega Hits 1993">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Mega Hits 1993</h2>
+                <p class="poster-modal__artist">par Aya Takahashi</p>
+                <p class="poster-modal__price">32,90 €</p>
+                <p class="poster-modal__desc">
+                    Hommage graphique aux casques iconiques et à l’esthétique rétro-futuriste des années 90.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-daftpunk">Format</label>
+                    <select id="format-daftpunk" disabled>
+                        <option>A2 (42 × 59,4 cm)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Piscine -->
+    <section id="poster-piscine" class="poster-modal">
+        <div class="poster-modal__content">
+            <a href="#posters-top" class="poster-modal__close">&times;</a>
+            <div class="poster-modal__image">
+                <img src="images/piscine.jpg" alt="Poster Burning Pool">
+            </div>
+            <div class="poster-modal__info">
+                <h2>Burning Pool</h2>
+                <p class="poster-modal__artist">par Julia Kempenaers</p>
+                <p class="poster-modal__price">34,90 €</p>
+                <p class="poster-modal__desc">
+                    Piscine enflammée sous un ciel violet, entre rêve et surréalisme.
+                    Une pièce forte pour un intérieur très graphique.
+                </p>
+                <div class="poster-modal__options">
+                    <label for="format-piscine">Format</label>
+                    <select id="format-piscine" disabled>
+                        <option>50 × 70 cm</option>
+                        <option>70 × 100 cm</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" disabled>Ajouter au panier (démo)</button>
+                <p class="poster-modal__note">Simulacre de page d’achat — aucun paiement réel n’est effectué.</p>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer class="site-footer">
@@ -166,4 +455,3 @@
 
 </body>
 </html>
-

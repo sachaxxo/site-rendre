@@ -76,24 +76,6 @@ Chaque artiste dispose d'une fiche descriptive avec styles graphiques et œuvres
 
 ---
 
-## 🚀 Déploiement (GitHub Pages)
-
-Pour publier le site :
-
-1. Accéder à `Settings` sur GitHub
-2. Section `Pages`
-3. Branch : `main`
-4. Dossier : `/(root)`
-5. Enregistrer
-
-Votre site sera disponible à l’adresse :
-
-```
-https://<votre-username>.github.io/site-rendre
-```
-
----
-
 ## 📬 Contact
 
 Pour toute question ou suggestion :  
@@ -115,3 +97,4 @@ Merci aux artistes et aux inspirations graphiques pour ce projet !
 ---
 
 © 2025 PosterVerse
+
